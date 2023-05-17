@@ -1,0 +1,39 @@
+.trendingGames {
+  background-color: $primary-color;
+
+  &-header {
+    margin: 130px 0 60px 0;
+    @include flexBox(center, space-between);
+    &-title {
+      display: inline-block;
+      font-family: $secondary-font;
+      font-size: 31px;
+      font-weight: bold;
+      color: white;
+    }
+    &-link {
+      font-size: 20px;
+      font-family: $secondary-font;
+      padding: 15px;
+      background-color: rgba(#fff, 10%);
+      color: white;
+      border-radius: 10px;
+    }
+  }
+  &-list {
+    @include flexBox(center, space-between);
+  }
+  &-item {
+    cursor: pointer;
+    &-content {
+      margin-top: 25px;
+      text-align: center;
+      color: white;
+      font-size: 22px;
+      font-family: $secondary-font;
+    }
+    &-text {
+      margin-left: 10px;
+    }
+  }
+}

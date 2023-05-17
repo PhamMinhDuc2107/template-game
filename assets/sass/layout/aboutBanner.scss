@@ -1,0 +1,27 @@
+.about {
+  &-banner {
+    &-title {
+      font-size: 30px;
+    }
+    &-img {
+      border-radius: 10px;
+    }
+  }
+}
+.banner {
+  &-nav {
+    margin-bottom: 38px;
+    span {
+      font-size: 12px;
+      font-weight: 300;
+    }
+    &-icon {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 10px;
+    }
+    &-text {
+      color: $secondary-color;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  background-color: $primary-color;
+  padding-top: 20px;
+
+  &-container {
+    height: 45px;
+    @include flexBox(center, space-between);
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 15px;
+  }
+  &-logo {
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+  }
+  &-nav-list {
+    @include flexBox(center, space-between);
+  }
+  &-nav-link {
+    color: white;
+    margin: 0 22px;
+    padding: 11.25px 22px;
+    font-size: 16px;
+    font-weight: 300;
+    &:hover {
+      background-color: $secondary-color;
+      color: white;
+      border-radius: 10px;
+    }
+  }
+}

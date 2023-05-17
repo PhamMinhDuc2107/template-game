@@ -1,0 +1,58 @@
+.banner {
+  background-color: $primary-color;
+  &-content {
+    margin-top: 35px;
+    color: white;
+    @include flexBox(center, space-between);
+    &-left {
+      max-width: calc(40% - 10px);
+      position: relative;
+    }
+    &-title {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+    &-desc {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    &-more {
+      display: inline-block;
+      font-size: 16px;
+      color: white;
+      background-color: $secondary-color;
+      border-radius: 30px;
+      margin-top: 50px;
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+    .unity {
+      position: absolute;
+      right: -30%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &-right {
+      position: relative;
+      max-width: calc(60% - 10px);
+      z-index: 0;
+    }
+    &-hero {
+      transform: translateX(29%);
+      margin-top: -200px;
+    }
+    .cry {
+      position: absolute;
+      top: 0;
+      left: 35%;
+    }
+    .unreal {
+      position: absolute;
+      top: 3%;
+      transform: translateX(50%);
+      left: 80%;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.currentProjects {
+  background-color: $primary-color;
+  &-container {
+    margin-top: 155px;
+    @include flexBox(center, center, column);
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 33px 27px;
+  }
+  &-item {
+    object-fit: cover;
+  }
+  &-link {
+    display: inline-block;
+    font-size: 20px;
+    font-family: $secondary-font;
+    padding: 15px;
+    background-color: rgba(#fff, 10%);
+    color: white;
+    border-radius: 10px;
+    margin-top: 72px;
+  }
+}
